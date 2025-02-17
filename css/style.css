@@ -1,8 +1,9 @@
 body {
     font-family: 'Lemon', cursive;
+    
 }
 
-.menu {
+.navbar {
     padding: 1.5%;
     background-color: #1C1A1A;
 }
@@ -11,6 +12,8 @@ body {
     color: #E5383B;
 }
 
+
+
 .nav-link:hover {
     color: #ffffff;
 }
@@ -18,7 +21,7 @@ body {
 .toggler-icon {
     width: 30px;
     height: 3px;
-    background-color: red; /* Cambia el color aquí */
+    background-color: red;
     margin: 5px 0;
 }
 
@@ -46,31 +49,170 @@ body {
     border: 3px solid #E5383B;
     padding: 20px;
 }
+.botnoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 50px;
+    color: #E5383B; 
+}
+.bx-search, .bx-cart{
+    font-size: 35px;
+}
+
+
+.cuerpo{
+    padding-top: 2%;
+    width: 100%;
+   
+    background-color: #1C1A1A;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.seleccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5%;
+    
+}
+.filt {
+    color: #ffffff;
+    text-align: center;
+}
+
+select#categoria.form-select{
+    width: 200px;
+}
+
+#categoria{
+    background-color: transparent;
+    width: 50%;
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#categoria option {
+    background-color: #1C1A1A;
+    color: #fff;
+    padding: 10px;
+}
+
+#categoria option:hover {
+    background-color: #d62d2d !important; /* Fondo rojo cuando se pasa el cursor */
+    color: #000000; /* Color del texto cuando se pasa el cursor */
+}
+
+
+
+.productosWrap{
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.targ {
+    width: 400px;
+    padding: 3%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.targ h4{
+    margin-top: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.precio{
+    color: #ffffff;
+}
+.compra{
+    width: 50%;
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.compra:hover{
+    color: #ffffff;
+    background-color: #E5383B;
+}
+
+
+#paginas{
+    font-size: 25px;
+    margin-top: 5%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+#paginas a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#paginas .rojo{
+    color: #E5383B;
+}
+
+footer{
+    background-color: #1C1A1A;
+    padding: 1.5%;
+    color: #ffffff;
+}
 
 /* Estilos para pantallas pequeñas (tabletas y móviles) */
+
 @media (max-width: 768px) {
+    .navbar{
+        padding: 5%;
+    }
     .logo {
-        position: fixed;
+        position: absolute;
         top: 20px;
         left: 20px;
-        z-index: 999;
+        z-index: 1000; /* Asegura que esté por encima del menú */
+        
     }
-
-    .fondo {
-        height: 70vh; /* Ajusta la altura del fondo para pantallas más pequeñas */
+    .seleccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    .enla {
-        width: 60%; /* Aumenta el tamaño del enlace en pantallas más pequeñas */
-        top: 55%; /* Ajusta la posición */
-        left: 20%; /* Cambia la posición para centrar más adecuadamente */
-        padding: 15px;
-        font-size: 18px; /* Tamaño de fuente más grande para mejor legibilidad */
+    #paginas{
+        font-size: 20px;
     }
+    select#categoria.form-select{
+        width: 40%;
+    }
+    footer{
+        padding: 10%;
+        text-align: center;
+    }
+    
+    
 }
 
 /* Estilos para móviles más pequeños */
 @media (max-width: 480px) {
+    .navbar{
+        padding: 10%;
+    }
     .logo {
         top: 10px;
         left: 10px;
@@ -83,4 +225,7 @@ body {
         padding: 12px;
         font-size: 16px; /* Tamaño de fuente aún más pequeño */
     }
+    
 }
+
+
