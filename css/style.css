@@ -1,6 +1,5 @@
 body {
     font-family: 'Lemon', cursive;
-    
 }
 
 .navbar {
@@ -112,45 +111,67 @@ select#categoria.form-select{
 
 
 .productosWrap{
-    padding-top: 1%;
+    padding-top: 3%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 80px;
     justify-content: center;
 }
+
 
 .targ {
-    width: 400px;
-    padding: 3%;
-    
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.targ h4{
-    margin-top: 30px;
-    color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.288);
+    padding: 15px;
+    border-radius: 8px;
+    width: 350px;
     text-align: center;
 }
 
 
-.precio{
+
+.targ-img {
+    width: 100%; 
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.targ-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta las imágenes sin recortarlas */
+}
+
+.info{
+    padding-top: 20px;
+    color: white;
+}
+
+.precio {
+    font-weight: bold;
     color: #ffffff;
 }
-.compra{
-    width: 50%;
+
+.booton button {
+    width: 100px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
-    padding: 2%;
+    padding: 8px 12px;
     border-radius: 5px;
+    cursor: pointer;
+
 }
 
-.compra:hover{
-    color: #ffffff;
+.booton button:hover {
     background-color: #E5383B;
+    color: white;
 }
-
 
 #paginas{
     font-size: 25px;
@@ -161,6 +182,7 @@ select#categoria.form-select{
     justify-content: center;
     gap: 40px;
 }
+
 #paginas a {
     text-decoration: none;
     color: #ffffff;
@@ -169,10 +191,96 @@ select#categoria.form-select{
     color: #E5383B;
 }
 
-footer{
+footer {
     background-color: #1C1A1A;
-    padding: 1.5%;
+    padding: 1%;
     color: #ffffff;
+    width: 100%;
+    text-align: start;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.izq{
+    width: 50%;
+}
+
+
+
+.tours-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1A1A;
+    height: 80vh;
+    text-align: center;
+}
+
+.foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tours {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.tours h1{
+    text-align: start;
+    color: white;
+}
+
+.tours-info {
+    text-align: start;
+    width: 60%;
+}
+
+.toto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1A1A;
+    padding: 10px;
+    color: white;
+    border-top: 1px solid white /* Línea superior */
+}
+
+.toto:first-child {
+    border-top: none;
+}
+
+.detalles {
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.detalles:hover {
+    transform: scale(1.1);
+}
+
+.redes{
+    background-color: #d62d2d;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    
+}
+.redes i{
+    color: black;
+    font-size: 50px;
 }
 
 /* Estilos para pantallas pequeñas (tabletas y móviles) */
@@ -214,7 +322,8 @@ footer{
         padding: 10%;
     }
     .logo {
-        top: 10px;
+        position: absolute;
+        top: 20px;
         left: 10px;
     }
 
