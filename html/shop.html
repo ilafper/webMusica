@@ -51,19 +51,18 @@
                     </li>
                 </ul>
                 <section class="botnoes">
-                    <a class="nav-link" href="#">
+                    <button class="nav-link">
                         <i class="bx bx-search"></i>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <i class="bx bx-cart"></i>
-                    </a>
+                    </button>
+                    <!-- Botón del carrito -->
+                    <button id="open-cart-btn" class="nav-link" aria-label="Ver carrito">
+                        <a href="#carrito"><i class="bx bx-cart"></i></a>
+                    </button>
                 </section>
             </div>
-            
-
-
         </div>
     </nav>
+
     <section class="cuerpo">
         <section class="seleccion">
             <label class="filt" for="categoria">Ordenar Por:</label>
@@ -172,7 +171,50 @@
     <footer>
         <p>© 10969 INC. All Right Reserved.</p>
     </footer>
+    <section id="carrito" class="carrito">
+        <section class="titi">
+            <h3>TU CARRITO</h3>
+            <a href="#"><i class='bx bx-x'></i></a>
+        </section>
+        <section class="subtiti">
+            <h4>Producto</h4>
+            <h4>Total</h4>
+        </section>
 
+        <section class="listaCarrito">
+            <!-- Productos del carrito -->
+            <section class="conjun">
+                <section class="rigth">
+                    <img src="../src/product.png" alt="">
+                </section>
+                <section class="left">
+                    <section class="arriba">
+                        <p>TAZA BLANCA BIG TIME RUSH</p>
+                        <p>5.99€</p>
+                    </section>
+                    <section class="abajo">
+                        <section class="canti">
+                            <i class='bx bx-minus'></i>
+                            <p>1</p>
+                            <i class='bx bx-plus'></i>
+                        </section>
+                        <section class="trash">
+                            <i class='bx bx-trash'></i>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="fin">
+                <section class="upup">
+                    <h3>TOTAL</h3>
+                    <P>12.99€</P>
+                </section>
+                <section>
+                    <button>REALIZAR PEDIDO</button>
+                </section>
+            </section>
+        </section>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

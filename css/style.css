@@ -6,7 +6,7 @@ body {
     padding: 1.5%;
     background-color: #1C1A1A;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .nav-link {
@@ -53,11 +53,11 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    color: #E5383B;
     padding-right: 1%;
 }
 .bx-search, .bx-cart{
     font-size: 30px;
+    color: #E5383B;
 }
 
 
@@ -385,6 +385,164 @@ footer {
 }
 
 
+
+
+/*PARTE CARRITO*/
+.carrito {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 999;
+}
+
+.carrito:target {
+    display: block;
+}
+
+
+
+.titi, .subtiti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+}
+
+.titi h3 {
+    margin: 0;
+}
+
+.titi i {
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.subtiti{
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.subtiti h4{
+    font-size: 15px;
+}
+
+.listaCarrito{
+    margin-top: 20px;
+}
+
+/*estilo recuadro producto*/
+.conjun {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+.rigth img {
+    width: 70px;
+}
+
+
+.left {
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* Nombre y precio en la misma línea */
+.arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.arriba p {
+    margin: 0;
+}
+
+
+.abajo {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 10px;
+}
+
+/* Controles de cantidad */
+.canti {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+}
+
+.canti i {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    
+}
+
+.canti p {
+    margin: 0 5px;
+}
+
+/* Ícono de eliminar */
+.trash i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.trash i:hover {
+    transform: scale(1.3);
+}
+
+
+/* Contenedor final del carrito */
+
+.upup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.upup h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.upup p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.fin button {
+    width: 100%;
+    padding: 12px;
+    background-color:#1C1A1A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fin button:hover {
+    transform: scale(1.01);
+}
+
+
+
 /* Estilos para pantallas pequeñas (tabletas y móviles) */
 @media (max-width: 900px) {
     .navbar {
@@ -509,6 +667,9 @@ footer {
         flex-direction: row;
         align-items: center;
         gap: 5px;
+    }
+    footer{
+        padding: 5%;
     }
 }
 
