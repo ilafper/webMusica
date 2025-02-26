@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MUSIC</title>
+    <title>PRODUCT</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
@@ -33,7 +33,6 @@
                 </a>
             </section>
 
-            <!-- Enlaces-->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto d-flex justify-content-evenly align-items-center w-100">
                     <li class="nav-item">
@@ -62,44 +61,35 @@
         </div>
     </nav>
 
-    <!-- Contenido de la página -->
-    <section class="music-content">
-        <section class="izq">
-            <img src="../src/music.jpg" alt="imagen album">
-        </section>
-    
-        <section class="derc">
-            <section class="playlist">
-                <img src="../src/paralice.jpg" width="200" alt="">
-                <h3>Paralyzed</h3>
-                <h5>Paralyzed - BIG TIME RUSH</h5>
-    
-                <audio id="audio" src="../src/musica.mp3"></audio>
-    
-                <div class="player-controls">
-                    <section class="control1">
-                        <button id="playPauseBtn">▶</button>
-                        <input type="range" id="progressBar" value="0" max="100">
-                    </section>
-
-                    <section class="control2">
-                        <span id="currentTime">00:00</span> / <span id="duration">2:21</span>
-
-                        <div class="volume-control">
-                            <i id="volumeIcon" class="bx bx-volume-full" style="font-size: 30px;"></i>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="song-list">
-                    <div><span>1</span><span>City Is Ours</span><span>3:21</span></div>
-                    <div><span>2</span><span>Til I Forget About You</span><span>3:02</span></div>
-                    <div><span>3</span><span>Windows Down</span><span>2:43</span></div>
-                </div>
+    <section class="producto-content">
+        <section class="Pizq">
+            <img id="imagen-principal" class="prin" src="../src/jer.png" alt="Producto">
+            <section class="carru">
+                <img class="miniatura" src="../src/jer.png" alt="Producto 1">
+                <img class="miniatura" src="../src/product.png" alt="Producto 2">
+                <img class="miniatura" src="../src/mochila.png" alt="Producto 3">
             </section>
+        </section>
+        <section class="Pderch">
+            <h2>Camiseta Big Time Rush</h2>
+            <h3>14.99€</h3>
+            <h3>SIZE</h3>
+            <div class="sizes">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </div>
+            <div class="cantidad">
+                <button id="restar">-</button>
+                <span id="cantidad">1</span>
+                <button id="sumar">+</button>
+            </div>
+            <button class="agregar-carro">AÑADIR AL CARRO</button>
         </section>
     </section>
     
+
     <footer>
         <p>© 10969 INC. All Right Reserved.</p>
     </footer>

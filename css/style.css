@@ -1,5 +1,6 @@
 body {
     font-family: 'Lemon', cursive;
+    height: 100vh;
 }
 
 .navbar {
@@ -103,18 +104,14 @@ select#categoria.form-select{
     padding: 10px;
 }
 
-#categoria option:hover {
-    background-color: #d62d2d !important; /* Fondo rojo cuando se pasa el cursor */
-    color: #000000; /* Color del texto cuando se pasa el cursor */
-}
-
-
 
 .productosWrap{
     padding-top: 3%;
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
+    margin-right: 5%;
+    margin-left: 5%;
     justify-content: center;
 }
 
@@ -192,7 +189,9 @@ select#categoria.form-select{
 }
 
 footer {
-    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    height: 10vh;
     background-color: #1C1A1A;
     padding: 1%;
     color: #ffffff;
@@ -282,28 +281,32 @@ footer {
 /*Pagina musica*/
 .music-content{
     width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 77vh;
+}
+
+.izq img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .derc {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .playlist {
-    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 15px;
-    padding: 20px;
-    border-radius: 8px;
     color: rgb(0, 0, 0);
-
 }
 
 .playlist h3{
@@ -543,6 +546,88 @@ footer {
 }
 
 
+/*PARTE PRODUCTO */
+
+.producto-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    background-color: #1C1A1A;
+    height: 77vh;
+}
+
+.Pizq {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.prin {
+    width: 300px;
+    height: auto;
+    border: 1px solid red;
+    margin-top: -150px;
+}
+
+.carru {
+    display: flex;
+    gap: 5px;
+    margin-top: -5%;
+    border: 1px solid red;
+}
+
+.carru img {
+    width: 175px;
+    cursor: pointer;
+    border: 1px solid red;
+    object-fit: cover;
+}
+
+
+.Pderch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sizes button {
+    background: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cantidad button {
+    background: white;
+    border: none;
+    padding:5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.agregar-carro {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 
 /* Estilos para pantallas pequeñas (tabletas y móviles) */
 @media (max-width: 900px) {
@@ -670,9 +755,12 @@ footer {
         gap: 5px;
     }
     footer{
-        padding: 5%;
+        padding-bottom: 5%;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 
 
 /* Estilos para móviles más pequeños */
@@ -687,11 +775,11 @@ footer {
     }
 
     .enla {
-        width: 80%; /* Aumenta aún más el tamaño del enlace */
-        top: 50%; /* Ajusta la posición vertical */
-        left: 10%; /* Centra aún más */
+        width: 80%;
+        top: 50%; 
+        left: 10%; 
         padding: 12px;
-        font-size: 16px; /* Tamaño de fuente aún más pequeño */
+        font-size: 16px;
     }
 
     /*Parte tour*/
