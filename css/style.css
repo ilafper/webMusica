@@ -8,14 +8,37 @@ body {
     background-color: #1C1A1A;
     display: flex;
     justify-content: space-evenly;
+    font-size: 18px;
 }
 
 .nav-link {
     color: #E5383B;
+    position: relative;
+
 }
 
-.nav-link:hover {
-    color: #ffffff;
+.nav-item a {
+    display: inline-block;
+    padding-bottom: 10px; /* Espacio para el borde */
+    color: #E5383B;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Empieza con el borde invisible */
+    height: 4px;
+    background-color: #E5383B;
+    transition: width 0.4s ease; /* Animación suave */
+}
+.nav-item a:hover{
+    color: #E5383B;
+}
+.nav-item a:hover::after {
+    width: 100%; /* El borde se expande hasta ocupar todo el ancho */
+    color: #E5383B;
 }
 
 .toggler-icon {
@@ -57,7 +80,7 @@ body {
     padding-right: 1%;
 }
 .bx-search, .bx-cart{
-    font-size: 30px;
+    font-size: 40px;
     color: #E5383B;
 }
 
@@ -397,7 +420,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 400px;
     height: 100vh;
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
