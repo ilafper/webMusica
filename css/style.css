@@ -565,29 +565,38 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .prin {
-    width: 300px;
+    width:400px;
     height: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin-top: -150px;
 }
 
 .carru {
+    /*border: 1px solid #E5383B;*/
     display: flex;
-    gap: 5px;
-    margin-top: -5%;
-    border: 1px solid red;
+    gap: 10px;
+    margin-top: -80px;
 }
 
 .carru img {
-    width: 175px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
-    border: 1px solid red;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
     object-fit: cover;
 }
+
+.carru img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 
 .Pderch {
@@ -597,36 +606,47 @@ footer {
 }
 
 .sizes button {
-    background: none;
-    border: 1px solid white;
-    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
     cursor: pointer;
-    color: white;
-    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
 }
+
+.sizes button:hover{
+    border-radius: 10px;
+}
+
 
 .cantidad {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-.cantidad button {
-    background: white;
-    border: none;
-    padding:5px 10px 5px 10px;
-    cursor: pointer;
+.cantidad i{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
 }
 
 .agregar-carro {
     background: white;
     color: black;
-    padding: 10px;
+    padding: 20px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
     font-weight: bold;
 }
 
+.agregar-carro:hover{
+    transform: scale(1.02);
+
+}
 
 
 /* Estilos para pantallas pequeñas (tabletas y móviles) */
