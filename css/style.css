@@ -347,7 +347,6 @@ footer {
 .player-controls {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 5px;
     font-size: 15px;
@@ -356,6 +355,7 @@ footer {
 
 
 .control1, .control2{
+    max-width: 150px;
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -366,7 +366,6 @@ footer {
 .control2{
     max-width: 200px;
 }
-
 #playPauseBtn {
     background-color: white;
     border: none;
