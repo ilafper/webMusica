@@ -54,8 +54,8 @@ body {
 
 .fondo {
     background-image: url("../src/fondo.jpg");
-    height: 90vh; 
-    width: 100%; 
+    height:90vh; 
+    width: 100%;
     background-size: cover; 
     background-repeat: no-repeat;
 }
@@ -623,18 +623,22 @@ footer {
 
 
 .Pderch {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+.sizes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .sizes button {
     border: none;
     background-color: white;
     padding: 10px 15px;
     cursor: pointer;
     color: rgb(0, 0, 0);
-    margin-right: 20px;
 }
 
 .sizes button:hover{
@@ -657,6 +661,7 @@ footer {
 }
 
 .agregar-carro {
+    width: 50%;
     background: white;
     color: black;
     padding: 20px;
@@ -672,7 +677,6 @@ footer {
 }
 
 
-/* Estilos para pantallas pequeñas (tabletas y móviles) */
 @media (max-width: 900px) {
     .navbar {
         padding: 5%;
@@ -798,10 +802,46 @@ footer {
         align-items: center;
         gap: 5px;
     }
+    .producto-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     footer{
         padding-bottom: 5%;
         justify-content: center;
         align-items: center;
+    }
+    
+    .producto-content{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .Pderch{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agregar-carro{
+        width:auto;
+        font-size: 20px;
+    }
+
+    .sizes{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sizes button{
+        width: auto;
+    }
+    .carru{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
