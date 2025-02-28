@@ -355,7 +355,6 @@ footer {
 
 
 .control1, .control2{
-    max-width: 150px;
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -366,6 +365,7 @@ footer {
 .control2{
     max-width: 200px;
 }
+
 #playPauseBtn {
     background-color: white;
     border: none;
