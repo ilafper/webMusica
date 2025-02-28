@@ -219,6 +219,7 @@ footer {
     justify-content: center;
     height: 10vh;
     background-color: #1C1A1A;
+    padding: 1%;
     color: #ffffff;
     width: 100%;
     bottom: 0;
@@ -352,6 +353,7 @@ footer {
     font-size: 15px;
     width: 100%;
 }
+
 
 .control1, .control2{
     display: flex;
