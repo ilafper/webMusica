@@ -19,7 +19,7 @@ body {
 
 .nav-item a {
     display: inline-block;
-    padding-bottom: 10px; /* Espacio para el borde */
+    padding-bottom: 10px; 
     color: #E5383B;
 }
 
@@ -33,9 +33,11 @@ body {
     background-color: #E5383B;
     transition: width 0.4s ease; /* Animación suave */
 }
+
 .nav-item a:hover{
     color: #E5383B;
 }
+
 .nav-item a:hover::after {
     width: 100%; /* El borde se expande hasta ocupar todo el ancho */
     color: #E5383B;
@@ -195,7 +197,7 @@ select#categoria.form-select{
 
 #paginas{
     font-size: 25px;
-    margin-top: 5%;
+    margin-top: 10%;
     color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -214,6 +216,7 @@ select#categoria.form-select{
 footer {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 10vh;
     background-color: #1C1A1A;
     padding: 1%;
@@ -328,6 +331,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 300px;
     gap: 15px;
     color: rgb(0, 0, 0);
 }
@@ -345,15 +349,23 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    font-size: 15px;
+    width: 100%;
 }
 
+
 .control1, .control2{
+    max-width: 150px;
     display: flex;
+    gap: 5px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.control2{
+    max-width: 200px;
+}
 #playPauseBtn {
     background-color: white;
     border: none;
@@ -361,7 +373,7 @@ footer {
     padding: 10px 15px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 35px;
 }
 
 #progressBar {
@@ -700,7 +712,6 @@ footer {
     }
     footer {
         padding: 10%;
-        text-align: center;
     }
 
     /*Parte tour*/
