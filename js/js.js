@@ -47,6 +47,22 @@ $(document).ready(function() {
     // Actualizar la barra de progreso y los tiempos cada segundo
     audio.addEventListener('timeupdate', updateProgress);
 
-    // Inicializar el tiempo total de la canción
+    // Inicializar el tiempo total de laq canción
     audio.addEventListener('loadedmetadata', updateProgress);
 });
+
+
+document.getElementById('muteButton').addEventListener('click', function() {
+    var video = document.getElementById('videoFondo');
+    video.muted = !video.muted;  // Alterna el estado de silencio
+
+    // Cambia el icono dependiendo del estado de silencio
+    if (video.muted) {
+        this.classList.remove('bx-volume-full'); // Eliminar el ícono de volumen completo
+        this.classList.add('bx-volume-mute');    // Añadir el ícono de volumen silenciado
+    } else {
+        this.classList.remove('bx-volume-mute'); // Eliminar el ícono de volumen silenciado
+        this.classList.add('bx-volume-full');    // Añadir el ícono de volumen completo
+    }
+});
+
